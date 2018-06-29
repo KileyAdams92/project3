@@ -6,11 +6,11 @@ module.exports = function(Sequelize, DataTypes) {
 			primaryKey: true, 
 			type: DataTypes.INTEGER
 		},
-		username: { 
+		reviewer_id: { 
 			type: DataTypes.STRING,
 			notEmpty: true
         },
-        name: { 
+        reviewed_id: { 
 			type: DataTypes.STRING,
 			notEmpty: true
 		},
@@ -20,19 +20,11 @@ module.exports = function(Sequelize, DataTypes) {
                 len: [1, 300]
             }
         },
-		email: { 
-			type:DataTypes.STRING, 
-			allowNull: false, 
-			unique: true, 
-			validate: {isEmail:true} 			
-		},
+
 		dog_id: {
             type: DataTypes.INTEGER
         },
-        status: {
-			type: DataTypes.ENUM('active','inactive'),
-			defaultValue:'active' 
-		},
+
 
     });
     // Review.associate = function(models) {

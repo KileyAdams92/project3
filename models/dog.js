@@ -13,9 +13,7 @@ module.exports = function(Sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     },
-    // last_login: {
-    // 	type: DataTypes.DATE
-    // },
+
     pet_name: {
       type: DataTypes.STRING,
       notEmpty: true
@@ -50,13 +48,10 @@ module.exports = function(Sequelize, DataTypes) {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true
-      // validate: {isEmail:true}
+      unique: true,
+     //validate: {isEmail:true}
     },
-    // status: {
-    // 	type: DataTypes.ENUM('active','inactive'),
-    // 	defaultValue:'active'
-    // },
+
     imgUrl: {
       type: DataTypes.TEXT
     }
