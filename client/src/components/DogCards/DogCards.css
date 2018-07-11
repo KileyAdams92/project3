@@ -7,7 +7,7 @@
   width: 350px;
   display: inline-block;
   margin-bottom: 100px;
-  margin-left: px;
+  margin-left: 90px;
   margin-right: 50px;
   margin-top: 50px;
 }
@@ -18,7 +18,7 @@ img {
 }
 
 #btnToProfile {
-  background-color: #f7882f;
+  background-color: #f7882f !important;
   color: white;
   font-size: 20px;
 }
