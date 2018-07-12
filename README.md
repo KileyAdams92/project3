@@ -24,7 +24,8 @@ The backend primarly utalizes ES5
 
 ## Deployment
 
-Deployed on Heroku at: 
+Deployed on Heroku at:
+https://puplife.herokuapp.com/
 
 ## Contributing
 
