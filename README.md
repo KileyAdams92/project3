@@ -4,7 +4,7 @@ A social media network for you and your pup!
 
 ## MERN App
 
-This full-stack app allows users to communicate and share details of their dog.  Upon signup, the user's information is captured in the MySQL database.  GET, POST and UPDATE routes retrieve and add new data to the databases.
+This full-stack SERN.js app allows users to communicate and share details of their dog.  Upon signup, the user's information is captured in the MySQL database.  GET, POST and UPDATE routes retrieve and add new data to the databases.
 
 Authentication allows users to access their personal profiles which displays reviews posted from previous play dates.
 
