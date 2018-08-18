@@ -2,8 +2,9 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/",
+  "proxy": "http://127.0.0.1:3001/",
   "dependencies": {
+    "@pusher/chatkit": "^0.7.16",
     "axios": "^0.18.0",
     "downshift": "^2.0.10",
     "firebase": "^5.2.0",
@@ -21,7 +22,8 @@
     "react-scripts": "1.1.4",
     "react-star-rating-component": "^1.4.1",
     "react-validation": "^3.0.7",
-    "s3-uploader-react": "^0.1.4-alpha"
+    "s3-uploader-react": "^0.1.4-alpha",
+    "validator": "^10.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

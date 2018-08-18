@@ -24,7 +24,11 @@ class Profile extends Component {
           description={this.state.profile.description}
           imgurl={this.state.profile.imgurl}
         />
-        <Reviews />
+        <Reviews
+          // dog_id={this.state.profile.dog_id}
+          review={this.state.profile.review}
+          reviewer={this.state.profile.reviewer}
+        />
       </div>
     );
   }

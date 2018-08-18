@@ -59,12 +59,12 @@ export default class SearchForm extends React.Component {
             selectedItem
           }) => (
             <div>
-              <label class="stateLabel" {...getLabelProps()}>
+              <label className="stateLabel" {...getLabelProps()}>
                 Enter a state
               </label>
               <br />
-              <input class="stateInput" {...getInputProps()} />
-              <ul class="options" {...getMenuProps()}>
+              <input className="stateInput" {...getInputProps()} />
+              <ul className="options" {...getMenuProps()}>
                 {isOpen
                   ? this.state.items
                       .filter(

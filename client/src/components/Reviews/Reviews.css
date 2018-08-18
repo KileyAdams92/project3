@@ -48,7 +48,7 @@ button:focus {
 }
 
 #reviewText {
-  font-size: 22px;
+  font-size: 16px;
 }
 
 .reviewName,
@@ -83,9 +83,15 @@ textarea {
 .comment {
   border-top: 0.125rem solid #6b7a8f;
 }
+
+.comment-header {
+  font-size: 16px;
+}
 .comment-body {
   font-style: italic;
   margin-left: 1rem;
+  color: #6b7a8f;
+  font-size: 22px;
 }
 .comment-footer {
   margin-bottom: 1rem;

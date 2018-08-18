@@ -81,13 +81,16 @@ module.exports = function(app) {
   });
 
   //route for login
-  app.post("/api/login", passport.authenticate("jwt"), function(req, res) {
-    db.Dog.findOne({
-      email: req.body.email,
-      password: req.body.password
-    }).then(function(dbDog) {
-      res.json(dbDog);
-    });
+  app.post("/api/login", passport.authenticate("local"), function(req, res) {
+    // db.Dog.findOne({
+    //   email: req.body.email,
+    //   password: req.body.password
+    // }).then(function(dbDog) {
+      //res.json(dbDog);
+    // });
+    res.status(200).send(req.user);
+    
+    
   });
 
   app.get("/api/profile/:id", function(req, res) {

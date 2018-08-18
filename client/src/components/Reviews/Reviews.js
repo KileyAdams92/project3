@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Reviews.css";
 import API from "../../utils/API";
+
 class Reviews extends React.Component {
   constructor() {
     super();
@@ -46,6 +47,7 @@ class Reviews extends React.Component {
     API.review({ reviewer: reviewer, review: review }).then(response => {
       console.log(response);
     });
+
     this.setState({ comments: this.state.comments.concat([comment]) }); // *new array references help React stay fast, so concat works better than push here.
   }
 
@@ -85,7 +87,7 @@ class CommentForm extends React.Component {
         <div className="comment-form-fields">
           <input
             className="reviewName"
-            placeholder=" User Name"
+            placeholder=" Users Name"
             required
             ref={input => (this._author = input)}
           />
@@ -120,7 +122,7 @@ class Comment extends React.Component {
     return (
       <div className="comment">
         <p className="comment-header">{this.props.reviewer}</p>
-        <p className="comment-body">- {this.props.body}</p>
+        <p className="comment-body">- {this.props.review}</p>
         <div className="comment-footer" />
       </div>
     );

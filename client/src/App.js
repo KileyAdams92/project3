@@ -26,8 +26,6 @@ class App extends Component {
             <Route exact path="/search" component={SearchForm} />
             <Route exact path="/signup" component={SignUp} />
 
-            {/* <Redirect from= "/signup" to="/profile" />
-            <Redirect from= "/" to="/profile" /> */}
           </Switch>
           <FooterPage />
         </div>

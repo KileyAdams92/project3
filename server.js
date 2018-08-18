@@ -34,8 +34,7 @@ app.use(
     saveUninitialized: true
   })
 );
-app.use(passport.initialize());
-app.use(passport.session());
+
 // Routes
 // =============================================================
 var router = require("./routes/api/dogs.js")(app);
